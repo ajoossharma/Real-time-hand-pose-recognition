@@ -46,25 +46,20 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Real-Time Handpose Estimation</h1>
+        <h1>Real-Time Handpose recognition</h1>
         <p>
-          This project demonstrates real-time handpose estimation using TensorFlow.js and a webcam.
+          This project demonstrates real-time handpose recognition using TensorFlow.js and react.js.
         </p>
       </header>
 
       <div className="main-container">
         <div className="camera-container">
-          <Webcam
-            ref={webcamRef}
-            className="webcam"
-          />
+          <h2>Your Webcam</h2>
+          <Webcam ref={webcamRef} className="webcam" />
         </div>
         <div className="projection-container">
           <h2>Hand Projection</h2>
-          <canvas
-            ref={canvasRef}
-            className="projection-canvas"
-          />
+          <canvas ref={canvasRef} className="projection-canvas" />
         </div>
       </div>
 

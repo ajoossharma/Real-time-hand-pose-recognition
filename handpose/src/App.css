@@ -3,24 +3,24 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #1c1c2b; 
+  background-color: #1c1c2b;
 }
 
 .App-header {
-  background-color: #252540; 
+  background-color: #252540;
   width: 100%;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #e1e1f0; 
+  color: #e1e1f0;
   font-size: 1.8rem;
   position: fixed;
   top: 0;
   z-index: 10;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-  border-bottom: 2px solid #6272a4; 
+  border-bottom: 2px solid #6272a4;
 }
 
 .App-header p {
@@ -29,27 +29,19 @@
 }
 
 .main-container {
-  margin-top: 120px;
   display: flex;
   flex: 1;
   justify-content: center;
-  gap: 20px; 
-  align-items: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  margin-top: 120px;
+  margin-bottom: 80px;
 }
 
 .camera-container {
   position: relative;
-  width: 640px; 
-  height: 480px;
-  border: 3px solid #6272a4;
-  border-radius: 12px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
-  background-color: #2b2b3d;
-}
-
-.projection-container {
-  position: relative;
-  width: 640px; 
+  width: 640px;
   height: 480px;
   border: 3px solid #6272a4;
   border-radius: 12px;
@@ -59,21 +51,59 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 10px; 
+  padding-top: 40px;
 }
 
-.projection-container h2 {
-  margin: 0;
-  padding: 5px;
+.camera-container h2 {
+  position: absolute;
+  top: 10px;
   font-size: 1.5rem;
   color: #e1e1f0;
   background-color: #3a3a54;
   border-radius: 8px;
   text-align: center;
   width: 90%;
+  padding: 5px;
+  z-index: 1;
 }
 
-.webcam, .canvas, .projection-canvas {
+.projection-container {
+  position: relative;
+  width: 640px;
+  height: 480px;
+  border: 3px solid #6272a4;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+  background-color: #2b2b3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+
+.projection-container h2 {
+  position: absolute;
+  top: 10px;
+  font-size: 1.5rem;
+  color: #e1e1f0;
+  background-color: #3a3a54;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%;
+  padding: 5px;
+  z-index: 1;
+}
+
+.webcam {
+  margin-top: 40px;
+  width: 100%;
+  height: calc(100% - 40px);
+  border-radius: 12px;
+}
+
+.canvas,
+.projection-canvas {
   position: absolute;
   top: 0;
   left: 0;
