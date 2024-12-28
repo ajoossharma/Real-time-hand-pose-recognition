@@ -1,7 +1,7 @@
 {
   "name": "handpose",
   "version": "0.1.0",
-  "homepage": "https://real-time-hand-pose-recognition.vercel.app/",
+  "homepage": "https://real-time-hand-pose-recognition.vercel.app",
   "private": true,
   "dependencies": {
     "@tensorflow-models/handpose": "^0.1.0",
